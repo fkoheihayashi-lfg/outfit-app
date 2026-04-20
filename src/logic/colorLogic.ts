@@ -16,7 +16,7 @@ const COMPATIBLE_PAIRS: [string, string][] = [
 
 const normalize = (color: string): string => color.toLowerCase().trim();
 
-export const isNeutral = (color: string): boolean =>
+const isNeutral = (color: string): boolean =>
   NEUTRAL_COLORS.includes(normalize(color));
 
 export const areColorsCompatible = (colorA: string, colorB: string): boolean => {
